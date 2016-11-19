@@ -1,0 +1,23 @@
+{
+        "test":
+        [
+            ["uint32","id"],
+            ["string","name"],
+            ["uint16","age"],
+            ["uint8", "sex"],
+            [ "list", "friendlist", "uint16",
+                [ 
+                    ["uint32","id"],
+                    ["string","name"],
+                    ["uint16","age"],
+                    ["uint8", "sex"],
+                    [ "list", "memberlist", "uint16",
+                    		[
+                    		    ["string", "name"],
+                    		    ["uint16", "age"]
+                    		]
+                    ]
+                ]
+            ]
+        ]
+}
