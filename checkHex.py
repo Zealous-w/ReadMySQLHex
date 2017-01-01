@@ -87,6 +87,7 @@ def SplitByType(entry, typelist, prefix):
         resultlist.append( strTemp )
     else:
         sys.exit("error type : " + dtype)
+    
     return
 
 def connectMysqlAndExcute( h, u, p, database, sql ):
